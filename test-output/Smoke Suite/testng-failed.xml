@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+  <listeners>
+    <listener class-name="com.qa.extendreportlistener.ExtendReport"/>
+  </listeners>
+  <test thread-count="5" name="Test-class test 2(failed)">
+    <classes>
+      <class name="com.qa.testcases.ContactSteps">
+        <methods>
+          <include name="submit_Contact"/>
+        </methods>
+      </class> <!-- com.qa.testcases.ContactSteps -->
+      <class name="com.qa.testcases.PaymentsSteps">
+        <methods>
+          <include name="submit_Payment"/>
+        </methods>
+      </class> <!-- com.qa.testcases.PaymentsSteps -->
+      <class name="com.qa.testcases.TradeSteps">
+        <methods>
+          <include name="enters_Trade"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TradeSteps -->
+    </classes>
+  </test> <!-- Test-class test 2(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

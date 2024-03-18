@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" >
+	
+	<listeners>
+		<listener class-name="com.qa.extendreportlistener.ExtendReport" />
+
+	</listeners>
+    <test name="Test-class test 2">
+		
+		
+        <classes>
+			 <class name="com.qa.testcases.HomePageSteps" />
+			 <class name="com.qa.testcases.ZipcodeSteps" />
+             <class name="com.qa.testcases.ContactSteps" />
+             <class name="com.qa.testcases.TradeSteps" />
+             <class name="com.qa.testcases.PaymentsSteps" />
+
+          
+        </classes>
+    </test>    
+</suite>

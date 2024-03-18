@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Smoke Suite</th></tr>
+<tr><td><a href="#t0">Test-class test 2</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num">138,640</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-class test 2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.ContactSteps</td><td><a href="#m0">submit_Contact</a></td><td rowspan="1">1710734310704</td><td rowspan="1">24787</td></tr><tr class="failedodd"><td rowspan="1">com.qa.testcases.PaymentsSteps</td><td><a href="#m1">submit_Payment</a></td><td rowspan="1">1710734365469</td><td rowspan="1">39267</td></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.TradeSteps</td><td><a href="#m2">enters_Trade</a></td><td rowspan="1">1710734335500</td><td rowspan="1">29960</td></tr><tr><th colspan="4">Test-class test 2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.HomePageSteps</td><td><a href="#m3">Launch_Buynow</a></td><td rowspan="1">1710734266138</td><td rowspan="1">29884</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testcases.ZipcodeSteps</td><td><a href="#m4">enterZip</a></td><td rowspan="1">1710734296028</td><td rowspan="1">14674</td></tr></tbody>
+</table>
+<h2>Test-class test 2</h2><h3 id="m0">com.qa.testcases.ContactSteps#submit_Contact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7625eec76e783b06c9275fa4a7a71eda, sendKeysToElement {id=f.EB703E60686656824394F5C9F106FCB5.d.9C1FF06C0583A3A13B72D0E5E7C92000.e.214, value=[Ljava.lang.CharSequence;@1542af63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/t4/kpsl01ln72s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51364/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (7625eec76e783b06c9275fa4a7a71eda)] -&gt; xpath: //input[@name=&quot;first_name&quot;]]
+Session ID: 7625eec76e783b06c9275fa4a7a71eda
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$nOciaLb5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy33.sendKeys(Unknown Source)
+	at com.qa.pageobjects_Customer.ContactPage.add_Contact(ContactPage.java:44)
+	at com.qa.testcases.ContactSteps.submit_Contact(ContactSteps.java:36)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testcases.PaymentsSteps#submit_Payment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Decorated {[[ChromeDriver: chrome on mac (4a971d29298954b304182958e2caa98e)] -&gt; xpath: //div[@id=&apos;bn-step-q-trade&apos;]//input[@name=&apos;vehicle&apos;]]} (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$rmdFeUkC
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/t4/kpsl01ln72s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51534/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a971d29298954b304182958e2caa98e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.qa.pageobjects_Customer.TradePage.Enter_Trade(TradePage.java:29)
+	at com.qa.testcases.PaymentsSteps.submit_Payment(PaymentsSteps.java:44)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.testcases.TradeSteps#enters_Trade</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Decorated {[[ChromeDriver: chrome on mac (5ec3605f78136ef2d40084ec6cca1d94)] -&gt; xpath: //div[@id=&apos;bn-step-q-trade&apos;]//input[@name=&apos;vehicle&apos;]]} (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$cunWoGts
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/t4/kpsl01ln72s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51448/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ec3605f78136ef2d40084ec6cca1d94
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.qa.pageobjects_Customer.TradePage.Enter_Trade(TradePage.java:29)
+	at com.qa.testcases.TradeSteps.enters_Trade(TradeSteps.java:38)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testcases.HomePageSteps#Launch_Buynow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testcases.ZipcodeSteps#enterZip</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
